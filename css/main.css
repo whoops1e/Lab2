@@ -10,25 +10,23 @@ body {
     font-family: tahoma, Arial, Helvetica, sans-serif;
 }
 
+
 .navbar-brand{
     width: 250px;
-}
-
-
-@media (min-width: 70em) {
-    .navbar-brand{
-        width: 325px;
-    }
 }
 
 
 a.nav-link {
     color: white !important;
 }
+
+
 a.nav-link:hover {
     text-decoration: none;
     border-bottom: 3px solid white !important;
 }
+
+
 a.nav-link.active {
     text-decoration: none;
     border-bottom: 3px solid white !important;
@@ -48,11 +46,12 @@ a.nav-link.active {
     box-sizing: border-box !important;
     
 }
+
+
 .btn.signup {
     color: white !important;
     background-color: transparent !important;
 }
-
 
 
 .containerr {
@@ -72,26 +71,11 @@ a.nav-link.active {
     font-weight: bolder;
 }
 
+
 .subtext{
     margin-top: 20px;
     font-size: 16px;
     font-weight: 100;
-}
-
-
-@media (min-width: 50em) {
-    .headline {
-        font-size: 5.5vw;
-        font-weight: bolder;
-    }
-}
-
-@media (min-width: 70em) {
-    .subtext{
-    margin-top: 25px;
-    font-size: 1.2vw;
-    font-weight: 100;
-    }
 }
 
 
@@ -108,21 +92,6 @@ btn{
     }
 
 
-@media (min-width: 100em) {
-btn{
-    border-radius: 10px;
-    font-size: 0.9vw;
-    font-weight: 500;
-    background-color: #FF5569;
-    text-align: center;
-    margin-top: 2vw;
-    margin-bottom: 13vh;
-    width: 13vw;
-    line-height: 35px;
-}
-}
-
-
 .footer {
     position: fixed;
     left: 0;
@@ -135,10 +104,12 @@ btn{
     text-align: center;
 }
 
+
 .allCirlces{
     padding-top: 25px;
     margin-bottom: 25px;
 }
+
 
 .circle{
     background-color: cornflowerblue;
@@ -161,6 +132,7 @@ btn{
     display: inline-block;
 }
 
+
 .circle:hover{
     background-color: cornflowerblue;
     border: 2px solid darkgoldenrod;
@@ -174,3 +146,36 @@ btn{
 }
 
 
+@media (min-width: 50em) {
+    .headline {
+        font-size: 5.5vw;
+        font-weight: bolder;
+    }
+}
+
+
+@media (min-width: 70em) {
+    .subtext{
+        margin-top: 25px;
+        font-size: 1.2vw;
+        font-weight: 100;
+    }
+    .navbar-brand{
+        width: 325px;
+    }
+}
+
+
+@media (min-width: 100em) {
+    btn{
+        border-radius: 10px;
+        font-size: 0.9vw;
+        font-weight: 500;
+        background-color: #FF5569;
+        text-align: center;
+        margin-top: 2vw;
+        margin-bottom: 13vh;
+        width: 13vw;
+        line-height: 35px;
+    }
+}
