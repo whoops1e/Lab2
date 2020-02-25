@@ -6,10 +6,43 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+        <link rel="script" href="js/main.js"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 <body>
+    <div class="form-popup" id="myFormUp">
+      <form action="/action_page.php" class="form-container">
+        <h1>SIGN UP</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+         <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+
+
+    <div class="form-popup" id="myFormIn">
+      <form action="/action_page.php" class="form-container">
+        <h1>SIGN IN</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+
     <nav class="navbar navbar-expand-sm navbar-dark">
         <a href="#"><img class="navbar-brand"  src="img/VIZZY_logo.png" width="350" alt="" class="d-inline-block align-midle mr-1"></img></a>
         
@@ -26,15 +59,15 @@
             </ul>
     
             <form class="form-inline mr-5">
-                <button class="btn signup" type="button" href="#">SIGN UP</button>
-                <button class="btn signin" type="button" href="#">SIGN IN</button>
+                <button class="btn signup" onclick="openFormUp()" type="button"  href="#">SIGN UP</button>
+                <button class="btn signin" onclick="openFormIn()" type="button" href="#">SIGN IN</button>
             </form>
         </div>
     </nav>
     
     <div class="containerr">
         <div class="headline"> 
-			Create Stunning <br/>
+			Templates <br/>
 			Visual Media<br/>
         </div>
 		<div class="subtext">	
@@ -45,17 +78,18 @@
         <btn>CREATE DESIGN &#8594</btn>
         
         <div class="allCirlces">
-            <div class="activeCircle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+            <div class="button-container">
+                <a onclick="background1()" class="slider-button circle"></a>
+                <a onclick="background2()" class="slider-button circle"></a>
+                <a onclick="background3()" class="slider-button circle"></a>
+            </div>  
         </div>
     </div>
     
     <div class="footer">
         Made by WHOOPS1E` 
     </div>
-    
+    <script src="./js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

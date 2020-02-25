@@ -10,52 +10,94 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a href="#"><img class="navbar-brand"  src="img/VIZZY_logo.png" width="350" alt="" class="d-inline-block align-midle mr-1"></img></a>
-        
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-            <span class="navbar-toggler-icon "></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a href="#" class="nav-link active ">HOME</a></li>
-                <li class="nav-item"><a href=".../products.html" class="nav-link">PRODUCTS</a></li>
-                <li class="nav-item"><a href="/templates.html" class="nav-link">TEMPLATES</a></li></li>
-                <li class="nav-item"><a href="/pricing.html" class="nav-link">PRICING</a></li>
-            </ul>
     
-            <form class="form-inline mr-5">
-                <button class="btn signup" type="button" href="#">SIGN UP</button>
-                <button class="btn signin" type="button" href="#">SIGN IN</button>
-            </form>
+        <div class="form-popup" id="myFormUp">
+          <form action="/action_page.php" class="form-container">
+            <h1>SIGN UP</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+             <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
         </div>
-    </nav>
+
+
+        <div class="form-popup" id="myFormIn">
+          <form action="/action_page.php" class="form-container">
+            <h1>SIGN IN</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+  
+
     
-    <div class="containerr">
-        <div class="headline"> 
-			Create Stunning <br/>
-			Visual Media<br/>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a href="#"><img class="navbar-brand"  src="img/VIZZY_logo.png" width="350" alt="" class="d-inline-block align-midle mr-1"></img></a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="#" class="nav-link active ">HOME</a></li>
+                    <li class="nav-item"><a href="./products.html" class="nav-link">PRODUCTS</a></li>
+                    <li class="nav-item"><a href="./templates.html" class="nav-link">TEMPLATES</a></li></li>
+                    <li class="nav-item"><a href="./pricing.html" class="nav-link">PRICING</a></li>
+                </ul>
+
+                <form class="form-inline mr-5">
+                    <button class="btn signup" onclick="openFormUp()" type="button"  href="#">SIGN UP</button>
+                    <button class="btn signin" onclick="openFormIn()" type="button" href="#">SIGN IN</button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="containerr">
+            <div class="headline"> 
+                Create Stunning <br/>
+                Visual Media<br/>
+            </div>
+            <div class="subtext">	
+                Super simple tool to create trendy videos and pictures<br/>
+                for you ads, social medias, blogs and websites.<br/>
+                Make you project stand out!<br/>
+            </div>
+
+            <!-- Slideshow container -->
+
+
+            <btn>CREATE DESIGN &#8594</btn>
+
+            <div class="allCirlces">
+                <div class="button-container">
+                    <a onclick="background1()" class="slider-button circle"></a>
+                    <a onclick="background2()" class="slider-button circle"></a>
+                    <a onclick="background3()" class="slider-button circle"></a>
+                </div>  
+            </div>
+
         </div>
-		<div class="subtext">	
-			Super simple tool to create trendy videos and pictures<br/>
-			for you ads, social medias, blogs and websites.<br/>
- 			Make you project stand out!<br/>
-        </div>
-        <btn>CREATE DESIGN &#8594</btn>
-        
-        <div class="allCirlces">
-            <div class="activeCircle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-        </div>
-    </div>
-    
     <div class="footer">
         Made by WHOOPS1E` 
     </div>
-    
+
+    <script src="./js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
