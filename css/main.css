@@ -21,11 +21,6 @@ a.nav-link {
 }
 
 
-a.nav-link:hover {
-    text-decoration: none;
-    border-bottom: 3px solid white !important;
-}
-
 
 a.nav-link.active {
     text-decoration: none;
