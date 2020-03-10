@@ -57,18 +57,18 @@
 
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a href="#" class="nav-link active ">HOME</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
                     <li class="nav-item"><a href="./products.html" class="nav-link">PRODUCTS</a></li>
                     <li class="nav-item"><a href="./templates.html" class="nav-link">TEMPLATES</a></li></li>
                     <li class="nav-item"><a href="./pricing.html" class="nav-link">PRICING</a></li>
                     <div class="dropdown show">
-                          <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> MORE </a>
+                            <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> MORE </a>
 
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <a class="dropdown-item" href="./tables.html">Tables</a>
                             <a class="dropdown-item" href="./gallery.html">Gallary</a>
-                          </div>
-                    </div>
+                        </div>
+                     </div>
                 </ul>
 
                 <form class="form-inline mr-5">
@@ -78,33 +78,68 @@
             </div>
     </nav>
 
-    <div class="containerr">
-            <div class="headline"> 
-                Create Stunning <br/>
-                Visual Media<br/>
+<div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2>Employee <b>Details</b></h2></div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button>
+                    </div>
+                </div>
             </div>
-            <div class="subtext">	
-                Super simple tool to create trendy videos and pictures<br/>
-                for you ads, social medias, blogs and websites.<br/>
-                Make you project stand out!<br/>
-            </div>
-
-
-            <btn>CREATE DESIGN &#8594</btn>
-
-            <div class="allCirlces">
-                <div class="button-container">
-                    <a onclick="background1()" class="slider-button circle"></a>
-                    <a onclick="background2()" class="slider-button circle"></a>
-                    <a onclick="background3()" class="slider-button circle"></a>
-                </div>  
-            </div>
-
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Phone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Administration</td>
+                        <td>(171) 555-2222</td>
+                        <td>
+							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Peter Parker</td>
+                        <td>Customer Service</td>
+                        <td>(313) 555-5735</td>
+                        <td>
+							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fran Wilson</td>
+                        <td>Human Resources</td>
+                        <td>(503) 555-9931</td>
+                        <td>
+							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>      
+                </tbody>
+            </table>
+        </div>
     </div>
+
+
+
     <div class="footer">
         Made by WHOOPS1E` 
     </div>
     
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
