@@ -13,7 +13,26 @@
     <script src="./js/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
+  <script>
+    function insert(num){
+  document.form.textview.value+=num;
+}
+  function equal(){
+    var temp = document.form.textview.value;
+    if(temp){
+      document.form.textview.value = eval(temp);
+    }
+  }
 
+  function back(){
+    var temp = document.form.textview.value;
+    document.form.textview.value = temp.substring(0,temp.length-1);
+  }
+
+  function delet(){
+    document.form.textview.value='';
+  }
+</script>
 <body>
     <div class="form-popup" id="myFormUp">
       <form action="/action_page.php" class="form-container">
@@ -79,68 +98,71 @@
     </nav>
     
     <div class="containerr">
-        <div class="headline"> 
-			Pricing <br/>
-			Visual Media<br/>
-        </div>
-		<div class="subtext">	
-			Super simple tool to create trendy videos and pictures<br/>
-			for you ads, social medias, blogs and websites.<br/>
- 			Make you project stand out!<br/>
-        </div>
-        <btn>CREATE DESIGN &#8594</btn>
-        <div class="allCirlces">
-            <div class="button-container">
-                <a onclick="background1()" class="slider-button circle"></a>
-                <a onclick="background2()" class="slider-button circle"></a>
-                <a onclick="background3()" class="slider-button circle"></a>
-            </div>  
-        </div>
-    </div>
-    
-    <footer class="page-footer footerrr font-small blue pt-4">
-      <div class="footerr">
-      <div class="container-fluid text-center text-md-left">
-        <div class="row">
-          <div class="col-md-6 mt-md-0 mt-3">
-            <h5 class="text-uppercase">Footer Content</h5>
-            <p>Here you can use rows and columns to organize your footer content.</p>
-         </div>
-          <hr class="clearfix w-100 d-md-none pb-3">
-          <div class="col-md-3 mb-md-0 mb-3">
-            <ul class="list-unstyled">
-              <li>
-                <a href="products.html">Products</a>
-              </li>
-              <li>
-                <a href="templates.html">Templates</a>
-              </li>
-              <li>
-                <a href="pricing.html">Pricing</a>
-              </li>
-            </ul>
+                
+			</div>
+			</nav>
+		</header>
+		
+			<div class="colcke lead text-justify text-light ">	
+				<h1>Calculator</h1>
+			
+		
+  <script>
+    function insert(num){
+  document.form.textview.value+=num;
+}
+  function equal(){
+    var temp = document.form.textview.value;
+    if(temp){
+      document.form.textview.value = eval(temp);
+    }
+  }
 
+  function back(){
+    var temp = document.form.textview.value;
+    document.form.textview.value = temp.substring(0,temp.length-1);
+  }
 
-          </div>
-          <div class="col-md-3 mb-md-0 mb-3">
-            <ul class="list-unstyled">
-              <li>
-                <a href="aboutus.html">About Us</a>
-              </li>
-              <li>
-                <a href="gallery.html">Gallery</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href="index.html"> Interneto_technologijos</a>
-      </div>
-      </div>
-    </footer>
-    
-    
+  function delet(){
+    document.form.textview.value='';
+  }
+</script>
+
+    <form name="form">
+        <input class="textview" name="textview" disabled="true">
+    </form>
+    <table>
+        <tr>
+          <td colspan="2"><input class="calc calc1" type="button" value="Del" onclick="back()"></td>
+          <td colspan="2"><input class="calc calc1" type="button" value="C" onclick="delet()"></td>
+        </tr>
+        <tr>
+          <td><input class="calc" type="button" value="7" onclick="insert(7)"></td>
+          <td><input class="calc" type="button" value="8" onclick="insert(8)"></td>
+          <td><input class="calc" type="button" value="9" onclick="insert(9)"></td>
+          <td><input class="calc" type="button" value="*" onclick="insert('*')"></td>
+        </tr>
+        <tr>
+          <td><input class="calc" type="button" value="4" onclick="insert(4)"></td>
+          <td><input class="calc" type="button" value="5" onclick="insert(5)"></td>
+          <td><input class="calc" type="button" value="6" onclick="insert(6)"></td>
+          <td><input class="calc" type="button" value="-" onclick="insert('-')"></td>
+        </tr>
+        <tr>
+          <td><input class="calc" type="button" value="1" onclick="insert(1)"></td>
+          <td><input class="calc" type="button" value="2" onclick="insert(2)"></td>
+          <td><input class="calc" type="button" value="3" onclick="insert(3)"></td>
+          <td><input class="calc" type="button" value="+" onclick="insert('+')"></td>
+        </tr>
+        <tr>
+          
+          <td><input class="calc" type="button" value="0" onclick="insert(0)"></td>
+          <td><input class="calc" type="button" value="." onclick="insert('.')"></td>
+          <td><input class="calc" type="button" value="=" onclick="equal()"></td>
+          <td><input class="calc" type="button" value="/" onclick="insert('/')"></td>
+        </tr>
+    </table>
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>

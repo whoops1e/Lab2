@@ -52,33 +52,35 @@
     
     
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a href="#"><img class="navbar-brand"  src="img/VIZZY_logo.png" width="350" alt="" class="d-inline-block align-midle mr-1"></img></a>
-        
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-            <span class="navbar-toggler-icon "></span>
-        </button>
+            <a href="#"><img class="navbar-brand"  src="img/VIZZY_logo.png" width="350" alt="" class="d-inline-block align-midle mr-1"></img></a>
 
-        <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
-                <li class="nav-item"><a href="products.html" class="nav-link active">PRODUCTS</a></li>
-                <li class="nav-item"><a href="templates.html" class="nav-link">TEMPLATES</a></li>
-                <li class="nav-item"><a href="pricing.html" class="nav-link">PRICING</a></li>
-                <div class="dropdown show">
-                        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> MORE </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon "></span>
+            </button>
 
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="./tables.html">Tables</a>
-                        <a class="dropdown-item" href="./gallery.html">Gallary</a>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="./index.html" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="./products.html" class="nav-link active">PRODUCTS</a></li>
+                    <li class="nav-item"><a href="./templates.html" class="nav-link">TEMPLATES</a></li></li>
+                    <li class="nav-item"><a href="./pricing.html" class="nav-link">PRICING</a></li>
+                    <li class="nav-item"><a href="./tables.html" class="nav-link">TABLES</a></li>
+                    <li class="nav-item"><a href="./gallery.html" class="nav-link">GALLARY</a></li>
+                    <div class="dropdown show">
+                          <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Languages </a>
+                        
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="./index.html">English</a>
+                            <a class="dropdown-item" href="./index_lt.html">Lietuvių</a>
+                          </div>
                     </div>
-                 </div>
-            </ul>
-    
-            <form class="form-inline mr-5">
-                <button class="btn signup" onclick="openFormUp()" type="button"  href="#">SIGN UP</button>
-                <button class="btn signin" onclick="openFormIn()" type="button" href="#">SIGN IN</button>
-            </form>
-        </div>
+                </ul>
+
+                <form class="form-inline mr-5">
+                    <button class="btn signup" onclick="openFormUp()" type="button"  href="#">SIGN UP</button>
+                    <button class="btn signin" onclick="openFormIn()" type="button" href="#">SIGN IN</button>
+                </form>
+            </div>
     </nav>
     
     <div class="containerr">
@@ -93,17 +95,81 @@
         </div>
         <btn>CREATE DESIGN &#8594</btn>
         <div class="allCirlces">
-            <div class="button-container">
-                <a onclick="background1()" class="slider-button circle"></a>
-                <a onclick="background2()" class="slider-button circle"></a>
-                <a onclick="background3()" class="slider-button circle"></a>
-            </div>  
+                <div class="button-container">
+                    <a onclick="background1()" class="slider-button circle"></a>
+                    <a onclick="background2()" class="slider-button circle"></a>
+                    <a onclick="background3()" class="slider-button circle"></a>
+                </div>  
         </div>
+
+        <form>
+          <div class="form-group">
+            <label class="text-light" for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <label class="text-light" for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+          </div>
+
+          <textarea class="form-control" rows="3"></textarea>
+
+          <div class="form-group">
+            <label class="text-light" for="exampleInputFile">File input</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block text-light">Example block-level help text here.</p>
+          </div>
+          <div class="checkbox">
+            <label class="text-light">
+              <input type="checkbox"> Check me out
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>  
     </div>
     
-    <div class="footer">
-        Made by WHOOPS1E` 
-    </div>
+    <footer class="page-footer footerrr font-small blue pt-4">
+      <div class="footerr">
+      <div class="container-fluid text-center text-md-left">
+        <div class="row">
+          <div class="col-md-6 mt-md-0 mt-3">
+            <h5 class="text-uppercase">Footer Content</h5>
+            <p>Here you can use rows and columns to organize your footer content.</p>
+         </div>
+          <hr class="clearfix w-100 d-md-none pb-3">
+          <div class="col-md-3 mb-md-0 mb-3">
+            <ul class="list-unstyled">
+              <li>
+                <a href="products.html">Products</a>
+              </li>
+              <li>
+                <a href="templates.html">Templates</a>
+              </li>
+              <li>
+                <a href="pricing.html">Pricing</a>
+              </li>
+            </ul>
+
+
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <ul class="list-unstyled">
+              <li>
+                <a href="aboutus.html">About Us</a>
+              </li>
+              <li>
+                <a href="gallery.html">Gallery</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="index.html"> Interneto_technologijos</a>
+      </div>
+      </div>
+    </footer>
+    
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

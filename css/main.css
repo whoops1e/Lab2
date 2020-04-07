@@ -59,7 +59,21 @@ a.nav-link.active {
     padding: 15px;
     color: white;
 }
+.footerrr{
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 99vw;
+    margin-left: -5vw;
+}
 
+.footerr {
+    height: 80%;
+    width: 95%;
+    margin: 10px 0px 0px 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
 
 .headline {
     font-size: 40px;
@@ -376,7 +390,37 @@ img.zoom {
       display:none;  
     }
 
+.colcke{
+    margin-left: 40%;
+}
 
+.calc{
+	padding:0;
+	margin:0;
+	width:75px;
+	height:75px;
+	border:0;
+	background-color: yellow;
+	cursor:pointer;
+}
+.textview{
+	width:306px;
+	height:50px;
+	margin:0;
+    background-color: azure;
+	padding:0;
+	margin-left: 1px;
+	border:0;
+	font-size:30px;
+}
+
+.calc1{
+	width:152px;
+}
+
+.foote{
+    background-color: darkslategrey;
+}
 
 
 
